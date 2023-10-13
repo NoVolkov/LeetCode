@@ -1,5 +1,9 @@
+#include <iostream>
+#include "IntegerToRoman.h"
+#include "RomanToInteger.h"
 
-int main(int argc, char *argv[])
+int main()
 {
-
+    std::cout<<intToRoman(1994)<<std::endl;
+//    std::cout<<romanToIntFaster("MCMXCIV");
 }
