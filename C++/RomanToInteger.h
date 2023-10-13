@@ -6,6 +6,7 @@
 #include <numeric>
 
 // 13. Roman to Integer
+// Easy
 
 //  Solution 1
 std::map<char, unsigned> dict{
