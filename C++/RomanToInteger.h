@@ -48,4 +48,39 @@ int romanToIntWithDict(std::string s) {
     }
     return res;
 }
+
+//  Solution 2 - faster and less memory
+/**
+ * The previous solution, but the reference to
+ * map structure was replaced by std::vector
+ * with already translated Arabic numerals
+ * from Roman numerals.
+ */
+int romanToIntFaster(std::string s){
+    int str_size=s.size();
+    std::vector<int> data;
+    int res;
+    for(const char &c:s){
+        switch (c) {
+            case 'I': data.push_back(1);break;
+            case 'V': data.push_back(5);break;
+            case 'X': data.push_back(10);break;
+            case 'L': data.push_back(50);break;
+            case 'C': data.push_back(100);break;
+            case 'D': data.push_back(500);break;
+            case 'M': data.push_back(1000);break;
+        }
+    }
+    res=data.at(str_size-1);
+    for(int i=str_size-2;i>=0;i--){
+        if(
+            data[i] >= data[i+1]
+        ){
+            res+=data[i];
+        }else{
+            res-=data[i];
+        }
+    }
+    return res;
+}
 #endif // ROMANTOINTEGER_H
