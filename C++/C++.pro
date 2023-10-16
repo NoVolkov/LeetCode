@@ -24,4 +24,5 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 
 HEADERS += \
     IntegerToRoman.h \
+    ReverseInteger.h \
     RomanToInteger.h
