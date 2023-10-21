@@ -5,8 +5,10 @@
 #include "PalindromeNumber.h"
 #include "MergeTwoSortedLists.h"
 #include "JewelsAndStones.h"
+#include "TwoSum.h"
 
 void test21MergeLists();
+void test1TwoSum();
 
 int main()
 {
@@ -16,7 +18,15 @@ int main()
 //    std::cout<<reverse(120)<<std::endl;
 //    std::cout<<isPalindrome(121)<<std::endl;
 //    test21MergeLists();
+//    std::cout<<numJewelsInStones("aA","aAAbbbb")<<std::endl;
+//    test1TwoSum();
+}
 
+void test1TwoSum(){
+    std::vector<int> arr{2,7,11,15};
+    for(int i: twoSum(arr,9)){
+        std::cout<<i<<std::endl;
+    }
 }
 
 void test21MergeLists(){

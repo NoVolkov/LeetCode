@@ -29,3 +29,4 @@ HEADERS += \
     PalindromeNumber.h \
     ReverseInteger.h \
     RomanToInteger.h \
+    TwoSum.h
