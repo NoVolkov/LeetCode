@@ -29,4 +29,5 @@ HEADERS += \
     PalindromeNumber.h \
     ReverseInteger.h \
     RomanToInteger.h \
+    SumOfNodesWithEven-ValuedGrandparent.h \
     TwoSum.h
