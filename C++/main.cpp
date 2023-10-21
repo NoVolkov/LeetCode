@@ -4,6 +4,7 @@
 #include "ReverseInteger.h"
 #include "PalindromeNumber.h"
 #include "MergeTwoSortedLists.h"
+#include "JewelsAndStones.h"
 
 void test21MergeLists();
 
